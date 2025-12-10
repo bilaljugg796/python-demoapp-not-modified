@@ -34,7 +34,7 @@ image:  ## 🔨 Build container image from Dockerfile
 	--tag $(IMAGE_REPO):$(IMAGE_TAG)
 
 push:  ## 📤 Push container image to registry 
-	docker push $(IMAGE_REG)/$(IMAGE_REPO):$(IMAGE_TAG)
+	docker push $(IMAGE_REPO):$(IMAGE_TAG)
 
 run: venv  ## 🏃 Run the server locally using Python & Flask
 	. $(SRC_DIR)/.venv/bin/activate \
